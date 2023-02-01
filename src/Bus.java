@@ -27,4 +27,12 @@ public class Bus extends Vehicle {
     public void setWheels(int wheels) {
         this.wheels = wheels;
     }
+
+    @Override
+    public String toString() {
+        return "Bus: " +
+                "seats=" + seats +
+                ", wheels=" + wheels +
+                "," + super.toString();
+    }
 }
